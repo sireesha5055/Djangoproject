@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <form method="get" action="{% url  'form_submit2' %}">
+            {% csrf_token %}
+            <div class="container" style="width: 50%;background-color: blueviolet;">
+                <label class="control-level">Enter A value </label><br>
+                <input type="text" name="a" class="form-control"/>
+                <label class="control-level">Enter B value </label><br>
+                <input type="text" name="b" class="form-control"/>
+                <label class="control-level">Enter C value </label><br>
+                <input type="text" name="c" class="form-control"/>
+                <label class="control-level">Enter D value </label><br>
+                <input type="text" name="d" class="form-control"/>
+                <input type="submit"  class="btn btn-success" value="submit">
+            </div>
+        </form>
+    </body>
+</html>

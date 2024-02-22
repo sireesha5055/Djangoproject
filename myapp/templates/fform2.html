@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container" style="width: 40%;">
+        <h1 style="text-align: center; background-color: gold;">welcome to for loop</h1>
+            <table class="table table-strriped table-bordered">
+                <thead>
+                    <tr class="active">
+                        <th>Eid</th><th>Ename</th><th>Esaal</th><th>Deptno</th>
+                    </tr>
+                    <tbody>
+                        {% for x in emps %}
+                             <tr class="active">
+                                <td>{{ x.eid }}</td><td>{{ x.ename }}</td><td>{{x.esal}}</td><td>{{x.deptno}}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </thead>
+            </table>
+    </div>
+</body>
+
+</html>

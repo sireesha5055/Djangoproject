@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="width:45%">
+        <table class="table table-stripped table-bordered">
+            <h1 style="text-align: center;background-color: green;">ProductDetails</h1>
+            <thead>
+                <tr class="active">
+                    <th>ProductNo</th>
+                    <th>Productname</th>
+                    <th>ProductPrice</th>
+                </tr>
+
+            <tbody>
+                {% for x in product %}
+                <tr>
+                    <td>{{x.pNo}}</td>
+                    <td>{{x.pname}}</td>
+                    <td>{{x.pprice}}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+            </thead>
+        </table>
+
+    </div>
+
+</body>
+</html>

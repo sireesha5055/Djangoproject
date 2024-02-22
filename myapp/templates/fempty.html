@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <h1 style="background-color: palevioletred; text-align: center;"> Forloop elements  </h1>
+
+        <ul>
+            {% for x in arr %}
+            <li style="text-align: center;background-color: aqua;">{{ x}}</li>
+            {% empty %}
+            <li style="text-align: center;background-color: red;">No elements</li>
+            {% endfor %}
+        </ul>
+        <h1 style="background-color: palevioletred; text-align: center;"> Forloop counter  </h1>
+        <ul>
+            {% for x in  arr %}
+           
+            <li style="background-color: brown;text-align: center;"> {{ forloop.counter }}</li>
+           
+            {% endfor %}
+        <h1 style="background-color: palevioletred; text-align: center;"> Forloop first element  </h1>
+        <ul>
+            {% for x in arr %}
+            {% if  forloop.first  %}
+            <li style="background-color: brown;text-align: center;"> {{ x }}</li>
+            {% endif %}
+            {% endfor %}
+        <h1 style="background-color: palevioletred; text-align: center;"> Forloop Last element  </h1>
+        <ul>
+            {% for x in arr %}
+            {% if  forloop.last %}
+            <li style="background-color: brown;text-align: center;"> {{ x }}</li>
+            {% endif %}
+            {% endfor %}
+
+        <h1 style="background-color: palevioletred; text-align: center;"> Forloop reversecounter  </h1>
+                    <ul>
+                        {% for x in  arr %}
+                        <li style="background-color: brown;text-align: center;"> {{ forloop.revcounter }}</li>
+                        {% endfor %}
+
+         
+    </body>
+</html>

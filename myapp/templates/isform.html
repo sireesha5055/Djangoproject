@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div class="container" style="width: 40%;">
+            <table class="table table-strriped table-bordered ">
+                    <thead>
+                        <tr class="active">
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {% if a == b %}
+                            <td style="text-align: center;">Both are same</td>
+                            {% else %}
+                            <td style="text-align: center;">Both are not  same</td>
+                            {% endif %}
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </body>
+</html>

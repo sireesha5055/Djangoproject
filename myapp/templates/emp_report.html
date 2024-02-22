@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container" style="width:45%">
+        <table class="table table-stripped table-bordered">
+            <h1 style="text-align: center;background-color: green;">EmpDetails</h1>
+            <thead>
+                <tr class="active">
+                    <th>Eid</th>
+                    <th>Ename</th>
+                    <th>Esal</th>
+                </tr>
+
+            <tbody>
+                {% for x in emp %}
+                <tr>
+                    <td>{{x.eid}}</td>
+                    <td>{{x.ename}}</td>
+                    <td>{{x.esal}}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+            </thead>
+        </table>
+      
+        
+
+</body>
+
+</html>
